@@ -1,11 +1,13 @@
 .mobile-menu-open-btn {
+  box-shadow: none;
+  line-height: 0;
   padding: 10px 0;
   border: none;
   position: relative;
-  background: white;
+  background: #ffff;
   cursor: pointer;
 
-  border-radius: 50%;
+  // border-radius: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -32,6 +34,8 @@
 }
 
 .mobile-menu__close-btn {
+  box-shadow: none;
+  line-height: 0;
   border: none;
   position: relative;
   background: #fff;
@@ -42,7 +46,7 @@
   justify-content: center;
   display: flex;
   cursor: pointer;
-  border-radius: 50%;
+  // border-radius: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,

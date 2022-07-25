@@ -7,9 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100% - 90px) / 3);
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
 
   transition: box-shadow var(--anim-slow);
   margin-right: 30px;
