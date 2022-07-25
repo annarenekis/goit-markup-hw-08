@@ -23,10 +23,96 @@
     <!--header-->
     <header class="header">
       <div class="container header-container">
-        <a href="./index.html" class="logo" lang="en"
+        <a href="./index.html" class="logo header__logo" lang="en"
           >Web<span class="logo-header">Studio</span></a
         >
 
+        <!-- nav mob btn -->
+        <button
+          type="button"
+          class="mobile-menu-open-btn js-open-menu"
+          data-menu-open
+        >
+          <svg class="mobile-menu-open-btn__icon" width="40" height="40">
+            <use
+              href="./images/icons.svg#mobile-menu"
+              class="mobile-menu__icon menu"
+            ></use>
+          </svg>
+        </button>
+        <!-- nav mob -->
+        <div class="mobile-menu" data-menu>
+          <div class="mobile-menu__container js-menu-container">
+            <button
+              type="button"
+              class="mobile-menu__close-btn js-close-menu"
+              aria-label="Переключатель мобильного меню"
+              data-menu-close
+            >
+              <svg class="" width="40" height="40">
+                <use
+                  class="mobile-menu__close-icon"
+                  href="./images/icons.svg#mobile-menu-cross"
+                ></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__item list">
+                <a
+                  href="./index.html"
+                  class="mobile-menu__link link mobile-menu__link--current"
+                  aria-current="page"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-menu__item list">
+                <a href="./portfolio.html" class="mobile-menu__link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu__item list">
+                <a href="#contacts" class="mobile-menu__link link">Контакты</a>
+              </li>
+            </ul>
+            <div class="mobile-menu__bottom-block">
+              <ul class="contact-mobile__list list">
+                <li class="contact-mobile__item list">
+                  <a
+                    href="tel:+380961111111"
+                    class="contact-mobile__link contact-mobile__link--phone marked link"
+                  >
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="contact-mobile__item list">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contact-mobile__link contact-mobile__link--mail link"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="social-mobile__list list">
+                <li class="social-mobile__item item list">
+                  <a href="" class="social-mobile__link link">Instagram</a>
+                </li>
+                <li class="social-mobile__item item list">
+                  <a href="" class="social-mobile__link link">Twitter</a>
+                </li>
+                <li class="social-mobile__item item list">
+                  <a href="" class="social-mobile__link link">Facebook</a>
+                </li>
+                <li class="social-mobile__item item list">
+                  <a href="" class="social-mobile__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- nav menu -->
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -38,7 +124,7 @@
               <a class="main-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Контакты</a>
+              <a class="main-nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -535,7 +621,7 @@
     </main>
 
     <!--footer-->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container footer-container">
         <div class="footer__div">
           <div class="footer-contacts">
@@ -734,6 +820,15 @@
       </div>
     </div>
 
+    <!-- body scrroll -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
