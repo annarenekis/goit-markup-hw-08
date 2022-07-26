@@ -1,0 +1,25 @@
+.button{
+    min-width: 200px;
+    font-family: inherit;
+    @include font($fw:700,$fs:16px, $lh:30px);
+    cursor: pointer;
+    letter-spacing: $secondary-letter-spacing;
+    box-shadow: $hero-btn-shadow;
+    color: $white-color;
+    background-color: $accent-color;
+    border-radius: 4px;
+    padding: 10px 32px;
+    
+    border: 1px solid transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        background-color: $btn-hover-col; 
+    }
+
+    &--form{
+        align-self: center;
+    }
+}
+

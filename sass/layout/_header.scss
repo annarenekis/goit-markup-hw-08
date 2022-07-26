@@ -1,0 +1,81 @@
+
+.header{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $header-border-color;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+@media screen and (max-width:767px){
+    .nav{
+        display: none;
+    }
+    .contacts{
+        display: none;
+    }
+    .header__container{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    // Это меняет у иконки, когда кнопка в ховере!!
+    .mobile-menu-open-btn__icon{
+        fill: $logo-dark-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+        .mobile-menu-open-btn:hover &, .mobile-menu-open-btn:focus &{
+            fill: $btn-hover-col;
+        }
+    }
+
+
+    .mobile-menu-open-btn{
+        border: none;
+        padding: 0;
+        line-height: 0;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+
+        // это меняет у кнопки
+        // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        // &:hover,
+        // &:focus {
+        //     fill: $btn-hover-col;
+        //     background: tomato;
+        // }
+    }
+}
+
+@media screen and(min-width:768px){
+    .mobile-menu-open-btn{
+        display: none;
+    }
+    .nav{
+        display: flex;
+    }
+    .contacts{
+        display: block;
+        margin-left: auto;
+    }
+    .header__logo{
+        margin-right: 88px;
+    }
+}
+
+@media screen and(min-width:1200px) {
+    .header__contacts{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+    
+}
+
+
+

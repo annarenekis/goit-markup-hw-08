@@ -1,38 +1,36 @@
-// utils styles
-@import './utils/vars';
+@import'./utils/variables';
 @import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixines';
 
-// base styles
-@import './base/common';
-@import './base/reset';
-@import './base/card-set';
+@import'./base/common.scss';
+@import'./base/container.scss';
+@import './base/section.scss';
 
-// components styles
-@import './components/mob-menu';
-@import './components/container';
-@import './components/logo';
-@import './components/buttons';
-@import './components/titles';
-@import './components/social';
-@import './components/forms';
-@import './components/contacts';
-@import './components/overlays';
+
+@import './components/button';
+@import './components/filter-btn';
 @import './components/navigation';
-@import './components/features-sections';
-@import './components/activity-sections';
-@import './components/team-sections';
-@import './components/clients-sections';
-@import './components/portfolio-cards';
+@import './components/social-list';
+@import './components/logo';
+@import './components/contacts';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/contact-form';
+@import './components/content-title-text';
 @import './components/checkbox';
-@import './components/agreement';
+@import './components/mobile-menu';
 
-// loyauts
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/features';
-@import './layouts/activity';
-@import './layouts/team';
-@import './layouts/clients';
-@import './layouts/portfolio';
-@import './layouts/footer';
-@import './layouts/modal';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/work';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/filter-portfolio';
+@import './layout/content';
+@import './layout/footer';
+@import './layout/subscription-form';
+
+
+

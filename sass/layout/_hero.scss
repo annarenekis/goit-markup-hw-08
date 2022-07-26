@@ -1,0 +1,83 @@
+.hero__title {
+    max-width: 360px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: $secondary-letter-spacing;
+    text-transform: uppercase;
+    color: $white-color; 
+}
+.hero{
+    max-height: 600px;
+    max-width: 1600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+   
+    background-color: $hero-background-col;
+    margin: 0 auto;
+    background-size: cover;
+
+
+// ==============  Для Мобилки
+    @media screen and (max-width:767.98px){
+        background-image:
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+     url("../images/hero/img-hero-mobile.jpg");
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: 
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero/img-hero-mobile@2x.jpg");
+    }
+     
+
+// ==============  Для Планшета
+     @media screen and (min-width:768px) and(max-width:1199.98px){
+        background-image: 
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero/img-hero-tablet.jpg") ;
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: 
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero/img-hero-tablet@2x.jpg");
+    }
+// ==============  Для Десктопа
+    @media screen and (min-width:1200px){
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero/img-hero-desktop.jpg");
+        .hero__title{
+            max-width: 696px;
+            font-size: 44px;
+            line-height: 1.36;
+    }
+    }   
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+    
+        background-image:
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero/img-hero-desktop@2x.jpg");
+    
+    }
+}
+
+
+
+

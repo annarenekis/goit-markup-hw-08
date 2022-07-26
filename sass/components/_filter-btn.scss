@@ -1,0 +1,30 @@
+.filter-btn {
+  min-width: 73px;
+
+  @include font($fw: 500, $fs: 16px, $lh: 26px);
+  letter-spacing: $prim-letter-spacing;
+  border: none;
+
+  font-family: inherit;
+  color: $heading-text-color;
+  background: $bg-lite-col;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: $filter-box-shadow;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+
+    border-radius: 4px;
+    color: $white-color;
+  }
+
+  &--current {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+}

@@ -1,0 +1,18 @@
+.section{
+    padding: 94px 0;
+    &--no-padding-top{
+        padding-top: 0;
+    }
+    &--team{
+        background: $bg-lite-col;
+    }
+}
+
+
+.section__title{
+    @include font($fw:700,$fs:36px, $lh:42px);
+    text-align: center;
+    letter-spacing: $prim-letter-spacing;
+    color: $heading-text-color;
+    margin-bottom: 50px;
+}
