@@ -1,50 +1,49 @@
 /* Checkbox */
-.checkbox__label{
-    @extend %align;
-    flex-wrap: wrap;
-    font-family: $primary-font-family;
-    @include font();
-    letter-spacing: $prim-letter-spacing;
-    color: $main-text-color;
-    margin-bottom: 30px;
-    
-    &::before{
-        display: block;
-        content: '';
-        width: 16px;
-        height: 15px;
-        border: 2px solid $logo-dark-color;
-        border-radius: 2px;
-        cursor: pointer;
-        margin-right: 4px;
-        
-        .checkbox:checked + &{
-             background-color:$accent-color;
-            border-color: $accent-color;
-            background-image: url("../images/modal-icons/choose-mark-icon.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 11px 8px;
-        }
-        
-        .checkbox:focus + &{
-            border: 2px solid $accent-color
-        } 
+.checkbox__label {
+  @extend %align;
+  flex-wrap: wrap;
+  font-family: $primary-font-family;
+  @include font();
+  letter-spacing: $prim-letter-spacing;
+  color: $main-text-color;
+  margin-bottom: 30px;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid $logo-dark-color;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 4px;
+
+    .checkbox:checked + & {
+      background-color: $accent-color;
+      border-color: $accent-color;
+      background-image: url('../images/modal-icons/choose-mark-icon.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 11px 8px;
     }
-    
-    & .checkbox__link{
-        text-decoration: underline;
-        color: $accent-color;
+
+    .checkbox:focus + & {
+      border: 2px solid $accent-color;
     }
+  }
+
+  & .checkbox__link {
+    text-decoration: underline;
+    color: $accent-color;
+  }
 }
 
-.checkbox--visually-hidden{
-    @extend %visually-hidden;
+.checkbox--visually-hidden {
+  @extend %visually-hidden;
 }
 
-@media screen and(max-width: 1199px){
-    .checkbox__label{
-        @include font($fw:400, $fs:12px, $lh:14px)
-    }
-    
+@media screen and(max-width: 1199px) {
+  .checkbox__label {
+    @include font($fw: 400, $fs: 12px, $lh: 14px);
+  }
 }
